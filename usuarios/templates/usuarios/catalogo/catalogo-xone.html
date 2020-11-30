@@ -1,0 +1,144 @@
+{% extends 'usuarios/base.html' %}
+
+{% block title %} {% endblock %}
+
+{% block css %} 
+<link rel="stylesheet" href="/static/css/estilo-catalogo-xone.css">
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('select').formSelect();
+  });
+</script>
+{% endblock %}
+
+{% block content %}
+<div id="contenedor" class="container">
+    <div class="row">
+        <div class="col s12 center">
+            <h1>XBOX ONE</h1>
+            <h3>Caracol Rojo <b>></b> Productos <b>></b> XBOX ONE</h3>
+        </div>
+    </div>
+    <div class="divider">
+    </div>
+    <div class="row">
+        <div class="col s12 center">
+            <h1>JUEGOS EN VERSION FISICA Y DIGITAL PARA XBOX ONE</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 center"> 
+            <h1>Contamos con una gran variedad de juegos en version fisica y digital con los mejores precios para tu consola XBOX ONE! Solo en Juegos Caracol Rojo!</h1>
+        </div>
+    </div>
+    <div class="divider">
+    </div>
+    <div class="row">
+        <div class="input-field col s2 right">
+            <select>
+                <option value="0" selected>Mas vendidos</option>
+                <option value="1">Alfabeticamente, A-Z</option>
+                <option value="2">Alfabeticamente, Z-A</option>
+                <option value="3">Precio, mayor a menor</option>
+                <option value="4">Precio, menor a mayor</option>
+            </select>
+        </div>
+        <div class="col s2 right">
+            <h1>Ordernar por:</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/a-way-out.jpg">
+                <h1><strong>Precio:</strong> $22.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/anthem.jpg">
+                <h1><strong>Precio:</strong> $30.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/batman-arkham-knight.jpg">
+                <h1><strong>Precio:</strong> $25.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/black-ops-2.jpg">
+                <h1><strong>Precio:</strong> $17.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/crackdown-3.jpg">
+                <h1><strong>Precio:</strong> $18.480</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/destroy-all-humans.jpg">
+                <h1><strong>Precio:</strong> $13.220</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/diablo-3.jpg">
+                <h1><strong>Precio:</strong> $23.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/fighter.jpg">
+                <h1><strong>Precio:</strong> $49.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/ghost-recon.jpg">
+                <h1><strong>Precio:</strong> $87.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/halo.jpg">
+                <h1><strong>Precio:</strong> $54.390</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/hitman.jpg">
+                <h1><strong>Precio:</strong> $45.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/killer-instinct.jpg">
+                <h1><strong>Precio:</strong> $49.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/lords-fallen.jpg">
+                <h1><strong>Precio:</strong> $38.980</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/m-vs-c.jpg">
+                <h1><strong>Precio:</strong> $11.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/mh-world.jpg">
+                <h1><strong>Precio:</strong> $22.000</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/tomb-raider.jpg">
+                <h1><strong>Precio:</strong> $44.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/twau.jpg">
+                <h1><strong>Precio:</strong> $32.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/twd.jpg">
+                <h1><strong>Precio:</strong> $23.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/world-war-z.jpg">
+                <h1><strong>Precio:</strong> $55.000</h1>
+            </div>
+            <div class="col s3">
+                <img src="/static/imagenes/xone/productos/dark-souls-3.jpg">
+                <h1><strong>Precio:</strong> $99.999</h1>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

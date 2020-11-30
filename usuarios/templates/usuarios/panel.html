@@ -1,0 +1,75 @@
+{% extends 'usuarios/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1 style="margin: 0;">Panel de usuario</h1>
+    </div>
+    <div class="row">
+        {% if user.is_superuser == True %}
+        <div class="col s4">
+            <p>Nombre: <label>{{user.nombres}}</label></p>
+            <p>Apellido: <label>{{user.apellidos}}</label></p>
+            <p>Nombre de usuario: <label>{{user.username}}</label></p>
+            <p>Email: <label>{{user.email}}</label></p>
+            <p>Estado: <label>{{user.estado}}</label></p>
+            <p>Credito: <label>{{user.credito}}</label></p>
+        </div>
+        <div class="col s4 center">
+            {% if user.imagen %}
+            <img style="width: 100px; height: 100px; border-radius: 50%;" src="{{user.imagen.url}}" alt="Sin imagen">
+            {% else %}
+            <img style="width: 100px; height: 100px; border-radius: 50%;" src="/static/imagenes/img_estandar_usuario.jpg" alt="Sin imagen">
+            {% endif %}
+            <p style="margin: 0;">Imagen de perfil</p>
+            <a href="cambiar_imagen">Cambiar</a>
+        </div>
+        <div class="col s4 center">
+            <h2 style="margin: 0;">CRUD</h2>
+            <ul>
+                <li>
+                    <a href="agregar">AGREGAR</a>
+                </li>
+                <li>
+                    <a href="buscar">MODIFICAR</a>
+                </li>
+                <li>
+                    <a href="eliminar">ELIMINAR</a>
+                </li>
+                <li>
+                    <a href="listar">LISTAR</a>
+                </li>
+                <li>
+                    <a href="listar_con_filtro">LISTAR CON FILTRO</a>
+                </li>
+            </ul>
+        </div>
+        {% else %}
+        <div class="col s4">
+            <p>Nombre: <label>{{user.nombres}}</label></p>
+            <p>Apellido: <label>{{user.apellidos}}</label></p>
+            <p>Nombre de usuario: <label>{{user.username}}</label></p>
+            <p>Estado: <label>{{user.estado}}</label></p>
+            <p>credito: <label>{{user.credito}}</label></p>
+        </div>   
+        <div class="col s4 center">
+            {% if user.imagen %}
+            <img style="width: 100px; height: 100px; border-radius: 50%;" src="{{user.imagen.url}}" alt="Sin imagen">
+            {% else %}
+            <img style="width: 100px; height: 100px; border-radius: 50%;" src="/static/imagenes/img_estandar_usuario.jpg" alt="Sin imagen">
+            {% endif %}
+            <p style="margin: 0;">Imagen de perfil</p>
+            <a href="cambiar_imagen">Cambiar</a>
+        </div>
+        <div class="col s4 center">
+            <h2 style="margin: 0;">Usuarios disponibles</h2>
+            <ul>
+                <li>
+                    <a class="btn wave-effect" href="listar_disponibles">Listar</a>
+                </li>
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

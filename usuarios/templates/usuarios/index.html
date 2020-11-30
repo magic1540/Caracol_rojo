@@ -1,0 +1,169 @@
+{% extends 'usuarios/base.html' %}
+
+{% load static %}
+
+{% block title %} Inicio {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/estilo-index.css' %}">
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="{% static 'js/index-script.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<section class="contenido">
+    <article>
+        <img style="position: relative; z-index: 0; margin: 0; height: 100%; width: 100%;" src=" {% static 'imagenes/fondo.png' %}" alt="Imagen de fondo" class="responsive-img">
+        <div style="position: absolute; z-index: 1; top: 30px; margin: 0;" class="carousel">
+            <div class="carousel-item">
+                <img src="{% static 'imagenes/portada-gow4.jpg' %}">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'imagenes/portada-halo4.jpg' %}">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'imagenes/portada-hk.jpg' %}">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'imagenes/portada-tlou2.jpg' %}">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'imagenes/portada-ori.jpg' %}">
+            </div>
+        </div>
+        <div style="width: 100%; height: 200px; position: absolute; z-index: 1; top: 370px; margin: 0;">
+            <h1 style="text-align: center; font-size: 20px; color: white;"><i class=material-icons>whatshot</i>Ofertas Diciocheras<i class=material-icons>whatshot</i></h1>
+            <h2 style="text-align: center; font-size: 20px; color: white;">Juegos con descuento en todas las plataformas</h2>
+        </div>
+        <div style="width: 100%; height: 100px; position: absolute; z-index: 1; top: 100vh; margin: 0;">
+            <div style=" height: 100%; border-radius: 5%; display: block; margin-right: auto; width: 400px;">
+                <h1 style="position: absolute; bottom: 2px; margin: 0; text-align: center; font-size: 20px; color: white;">Realiza el seguimiento de tu pedido <a href="#" style="color: red;">AQUÍ</a></h1>
+            </div>
+        </div>
+    </article>
+    <article>  
+        <div class="container">
+            <div class="card"> 
+                <div class="card-image">
+                    <img src="{% static 'imagenes/img-envio.png' %}">
+                </div>
+                <div class="card-content">
+                    <h1>Envios a todo chile</h1>
+                    <p>
+                        Realizamos envio via ChileExpress por pagar
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'imagenes/img-pago-seguro.png' %}">
+                </div>
+                <div class="card-content">
+                    <h1>Pago 100% Seguro</h1>
+                    <p>
+                        Puedes pagar con tu tarjeta via WebPay
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'imagenes/img-garantia.png' %}">
+                </div>
+                <div class="card-content">
+                    <h1>Garantía</h1>
+                    <p>
+                        Nuestros productos vienen con una garantia
+                        de 3 meses por defecto  de fabrica
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Elige una plataforma</option>
+                      <option value="0">PC</option>
+                      <option value="1">XBOX ONE</option>
+                      <option value="2">XBOX 360</option>
+                      <option value="3">Playstation 4</option>
+                      <option value="4">Playstation 3</option>
+                      <option value="5">Nintendo Switch</option>
+                      <option value="6">Nintendo Wii U</option>
+                    </select>
+                    <label style="color: black;">Plataformas</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s3">
+                    <h2>Juegos</h2>
+                    <h1>Destacados</h1>
+                    <a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Ver mas</a>
+                </div>
+                <div class="col s3">
+                    <img id="destacado1" src="{% static 'imagenes/ps4/ark.jpg' %}">
+                </div>
+                <div class="col s3">
+                    <img id="destacado2" src="{% static 'imagenes/ps4/avengers.jpg' %}">
+                </div>
+                <div class="col s3">
+                    <img id="destacado3" src="{% static 'imagenes/ps4/doom.jpg' %}">
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s3">
+                    <h2>Juegos</h2>
+                    <h1>Más vendidos</h1>
+                    <a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Ver mas</a>
+                </div>
+                <div class="col s3">
+                    <img id="mas-vendidos1" src="{% static 'imagenes/ps4/ff7.jpg' %}">
+                </div>
+                <div class="col s3">
+                    <img id="mas-vendidos2" src="{% static 'imagenes/ps4/fifa21.jpg' %}">
+                </div>
+                <div class="col s3">
+                    <img id="mas-vendidos3" src="{% static 'imagenes/ps4/ghost.jpg' %}">
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s3">
+                    <h2>Juegos</h2>
+                    <h1>Con descuento</h1>
+                    <a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Ver mas</a>
+                </div>
+                <div class="col s3">
+                    <img id="descuento1" src="{% static 'imagenes/ps4/kakarot.jpg' %}">
+                </div>
+                <div class="col s3">
+                    <img id="descuento2" src="{% static 'imagenes/ps4/mk11.jpg' %}">
+                </div>
+                <div class="col s3">
+                    <img id="descuento3" src="{% static 'imagenes/ps4/pes2020.jpg' %}">
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s3">
+                    <h2>Proximos</h2>
+                    <h1>Lanzamientos</h1>
+                    <a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Ver mas</a>
+                </div>
+                <div class="col s3">
+                    <img id="lanzamiento1" src="{% static 'imagenes/ps4/tsubasa.jpg' %}">
+                </div>
+                <div class="col s3">
+                    <img id="lanzamiento2" src="{% static 'imagenes/ps4/nfs.jpg' %}">
+                </div>
+                <div class="col s3">
+                    <img id="lanzamiento3" src="{% static 'imagenes/ps4/death-stranding.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+{% endblock %}

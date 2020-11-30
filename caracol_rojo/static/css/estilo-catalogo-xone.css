@@ -1,0 +1,88 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+/*CONTENEDOR GENERAL*/
+#contenedor{
+    width: 100%;
+    height: 300vh;
+    position: relative;
+}
+#contenedor h1{
+    color: white;
+}
+.divider{
+    background-color: red;
+}
+/*FILA 1*/
+#contenedor .row:nth-child(1) h1{
+    font-size: 35px;
+    color: rgb(31, 168, 43);
+}
+#contenedor .row:nth-child(1) b{
+    color: gray;
+}
+#contenedor .row:nth-child(1) h3{
+    font-size: 20px;
+    color: white;
+}
+/*FILA 1*/
+
+/*FILA 2 Y 3*/
+#contenedor .row:nth-child(3) h1{
+    font-size: 20px;
+    margin: 0;
+}
+#contenedor .row:nth-child(4) h1{
+    font-size: 20px;
+    margin: 0;
+}
+/*FILA 2 Y 3*/
+
+/*FILA 4*/
+#contenedor .row:nth-child(6) h1{
+    font-size: 20px;
+}
+#contenedor .row:nth-child(6) .input-field{
+   background-color: darkorange;
+   height: 50px;
+   border: 1px solid red;
+   margin-top: 25px;
+}
+/*FILA 4*/
+
+/*CONTENEDOR JUEGOS*/
+#contenedor .container{
+    height: 100vh;
+    width: 100%;
+}
+#contenedor .container .row{
+    height: 50%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+#contenedor .container .row .col{
+    height: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid darkorange;
+}
+#contenedor .container .row img{
+    height: 90%;
+    width: 100%;
+}
+#contenedor .container .row h1{
+    font-size: 20px;
+    color: white;
+    height: 10%;
+    margin: 0;
+    text-align: center;
+}
+/*CONTENEDOR JUEGOS*/
+
+/*CONTENEDOR GENERAL*/

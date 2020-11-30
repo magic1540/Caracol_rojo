@@ -1,0 +1,19 @@
+{% extends 'usuarios/base.html' %}
+
+{% block title %} Recuperar contraseña {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <form method='POST' class="col s12">
+            {% csrf_token %}
+            <h4 style="margin: 0;">Ingresa tu nueva contraseña</h1>
+            <h5 style="margin: 0;">Ingrese su nueva contraseña dos veces para que podamos verificar que la ingresó correctamente</h5>
+            <br>
+            <br>
+            {{form}}
+            <input class="btn" type="submit" value="Confirmar">
+        </form>
+    </div>
+</div>
+{% endblock %}
